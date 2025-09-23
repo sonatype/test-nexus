@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <pluginGroups>
+        <!-- Plugin for Jasmine Unit test  -->
+        <pluginGroup>com.github.searls</pluginGroup>
+    </pluginGroups>
+    <proxies>
+    </proxies>
+    <servers>
+        <server>
+            <id>repo.s.c</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+    </servers>
+    <mirrors>
+        <mirror>
+            <id>repo.s.c</id>
+            <mirrorOf>*</mirrorOf>
+            <url>http://localhost:8081/repository/Hello12/</url>
+        </mirror>
+    </mirrors>
+    <profiles>
+        <profile>
+            <id>repository-manager-support</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>http://repo1.maven.org/maven2</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <url>http://repo1.maven.org/maven2</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>repository-manager-support</activeProfile>
+    </activeProfiles>
+</settings>

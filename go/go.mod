@@ -1,0 +1,18 @@
+module test-nexus
+
+go 1.21
+
+require (
+	ergo.services/tools v0.0.0-20240904055809-40600ef2b896
+	github.com/gofrs/uuid v4.4.0+incompatible // UUID generation
+	github.com/gorilla/mux v1.8.1 // HTTP router
+	github.com/gorilla/schema v1.4.1 // Similar to commons-codec for encoding/decoding
+	github.com/json-iterator/go v1.1.12 // Similar to jackson-databind for JSON processing
+	github.com/sirupsen/logrus v1.9.3 // Logging
+)
+
+require (
+	github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 // indirect
+	github.com/modern-go/reflect2 v1.0.2 // indirect
+	golang.org/x/sys v0.14.0 // indirect
+)

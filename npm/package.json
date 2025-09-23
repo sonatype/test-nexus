@@ -1,0 +1,39 @@
+{
+  "name": "test-nexus-npm",
+  "version": "1.0.0",
+  "description": "Test project for NPM dependencies through Nexus proxy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "uuid": "^9.0.1",
+    "axios": "^1.5.0",
+    "moment": "^2.29.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "helmet": "^7.0.0",
+    "validator": "^13.11.0",
+    "chalk": "^4.1.2",
+    "error-ex": "^1.3.2",
+    "multer": "^1.4.5-lts.1",
+    "compression": "^1.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
+    "concurrently": "^8.2.1",
+    "cross-env": "^7.0.3"
+  },
+  "keywords": ["nexus", "npm", "proxy", "test"],
+  "author": "test",
+  "license": "ISC"
+}
