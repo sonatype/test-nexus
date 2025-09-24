@@ -38,7 +38,7 @@ The `.npmrc` file is configured to use the Nexus npm-proxy repository:
 
 ```
 registry=http://localhost:8081/repository/npm-proxy/
-//localhost:8081/repository/npm-proxy/:_auth=YWRtaW46YWRtaW4xMjM=
+//localhost:8081/repository/npm-proxy/:_auth=*token*
 always-auth=true
 email=admin@example.com
 ```
