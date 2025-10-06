@@ -22,6 +22,12 @@ test-nexus/
 │   ├── package.json # NPM dependencies (express, lodash, uuid, etc.)
 │   ├── .npmrc      # NPM Nexus configuration
 │   └── README.md   # NPM setup instructions and repository creation
+├── python/         # Python project files (PythonProject1)
+│   ├── pyproject.toml # Python project configuration
+│   ├── requirements.txt # Python dependencies (numpy, pandas)
+│   ├── README.md   # Python project documentation
+│   ├── dist/       # Distribution files
+│   └── simple/     # Package source code
 └── README.md       # This file
 ```
 
@@ -46,10 +52,18 @@ cd npm/
 npm install
 ```
 
+### Python
+```bash
+cd python/
+pip install -r requirements.txt
+python -m build
+```
+
 ## Configuration Summary
 
 - **Maven**: Uses `settings.xml` with mirror pointing to Nexus
 - **Go**: Uses module proxy configuration
-- **NPM**: Uses `.npmrc` with registry pointing to Nexus proxy
+- **NPM**: Uses `.npmrc` with registry pointing to Nexus proxy  
+- **Python**: Uses `pyproject.toml` for build configuration and pip for dependency management
 
-All three tools are configured to pull dependencies through Nexus Repository Manager instead of directly from public registries.
+All four tools are configured to pull dependencies through Nexus Repository Manager instead of directly from public registries.
